@@ -1,5 +1,106 @@
 @charset "UTF-8";
 
-div{
-	background: skyblue;	
+ * , body ,div{
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style: none;
+ 	text-decoration: none;
+ 	box-sizing: border-box;
+ }
+ .container_left{
+ 	width: 30%;
+ 	position: fixed;
+ 	height: 100%;
+ }
+ #menu {
+ 	padding: 0;
+ }
+ #menu > li{
+ 	display: block;
+ }
+ #menu > li > a{
+ 	display: block;
+ 	color:black;
+ 	padding:20px 50px;
+ }
+ #menu > li > a:hover{
+	background: black;
+	color:white;
+	font-weight: bold;
 }
+ .container_right{
+ 	width: 70%;
+ 	height:100%;
+ 	right: 0px;
+ 	margin-left:auto; /* 오른쪽으로 갔음! */
+ }
+ .container_right > div{
+ 	width: 100%;
+ 	height:500px;
+ 	margin: 0 auto;
+ }
+ .frame{ /* block */
+ 	display: inline-block;
+ 	width: 33.3%;
+ 	height: 100%;
+ 	background:red;
+ 	 margin-right: -6px; /*inline block 했을 때 요소 사이에 공백 생김 (글자 크기 만큼) text로 렌딩 되었기 떄문에  */
+ }
+ ul{
+ 	text-align: center;
+ 	padding: 20px;
+ }
+ li{
+ 	display: inline-block;
+ }
+ #fare{ /* class로 주면 저 위에 클래스(10점) + element(1점) 11점보다 낮기 때문에 안먹음 그래서 아이디 준다 */
+ 	width: 70%;
+ 	height: 400px;
+ 	margin: 0 auto;
+ 	text-align: center;/*div 안에 있는 여러개 div 중앙정렬  */
+ 	display: inline-block;
+ } 
+ 
+ }
+ .fuck{ /* block */
+	width:45%;
+	display: inline-block;
+	padding: 0;
+ }
+ .fuck > li{
+	width:100%;
+	display: block;
+	padding: 20px;
+	background: yellow;
+ }
+ .top_menu{
+	 background:blue;
+  	idth: 100%;
+   	height: 100px;
+    position: fixed;
+	 display:none;
+ }
+ #fare > div {
+ 	display: inline-block;
+ }
+ #fare, .footer{
+ 	display: inline-block;
+ }
+ #num{
+ 	width: 100%;
+ 	background: pink;
+ 	height: 60px;
+ 	display: block;
+ }
+ @media screen and (max-width: 768px){
+ 	.container_right ,#fare,.footer,#num,.frame,.top_menu {
+ 		display: block;
+ 		width:100%;
+ 	}
+ }
+ @media screen and (max-width: 768px){
+ 	.container_left {
+ 		display: none;
+ 	}
+ }
+ 
