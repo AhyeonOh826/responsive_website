@@ -9,28 +9,31 @@
 	font-family: 'HeirofLightBold';
 }
 
-.container{
-	width:80%;
-	margin: 0 auto;
-}
-
 .header{
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between; /* container 속성 */
 	align-items: center; /* container 속성 */
-	padding: 10px 20px;
+	padding: 10px 30px;
+	border-bottom: 1px solid black;
+}
+.header > h2{
+	padding-left: 30px;
+}
+.container{
+	width:80%;
+	margin: 0 auto;
 }
 
 i{
 	font-size: 24px;
-	position: relative; /* static이 디폴트인데 움직일 수있게  */
-	top:3px;
 }
- .header > .what{
+
+.header > .what{
 	display: none;
 }
+
 .header li {
 	display: inline-block;
 }
@@ -39,8 +42,54 @@ i{
 	border: 1px solid black;
 	font-size: 12px;
 	display: block;
-	padding: 5px 10px;
+	padding: 3px 10px;
 	color: black;
+	position: relative;
+	top:-4px;
+}
+
+.event {
+	padding:20px 0;
+	text-align: center;	
+	border-bottom: 1px dashed black;
+}
+
+.event i{
+	padding: 2px 0;
+}
+section{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	flex-direction: row;
+	margin-top:50px;
+	position: relative;
+}
+section > div {
+	flex-basis: 50%;
+}
+
+.right > a {
+	font-size: 50px;
+	padding: 0 20px 150px 0;
+	display: block;
+	text-align: right;
+}
+.right > div > a{
+	font-size: 1.0rem;
+	color: gray;
+	border-bottom: 2px solid gray;
+	margin:0 20px;
+}
+.right > div > a:last-child{
+	float: right;
+	color: black;
+	border-style: none;
+}
+
+.right div:last-child {
+	margin: 30px 20px;
+	line-height: 1.9em;
 }
 
 @media screen and (max-width:1000px){
@@ -49,5 +98,13 @@ i{
 	}
 	.header > .what{
 		display: block;
+	}
+	section{
+		flex-direction: column;
+		margin-top:100px;
+	}
+	.right > a{
+		position: absolute;
+		top: -90px;
 	}
 }
