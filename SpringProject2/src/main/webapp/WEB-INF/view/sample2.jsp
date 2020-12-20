@@ -8,37 +8,26 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <!-- sample.css 파일 사용을 위한 태그 -->
-<link rel="stylesheet" type="text/css" href="resources/css/sample2.css?ver=2"/>
+<link rel="stylesheet" type="text/css" href="resources/css/sample2.css?ver=6"/>
+<link rel="stylesheet" type="text/css" href="resources/css/font.css?ver=6"/>
 <!-- Jquey를 사용을 위한 태그 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- smaple.js를 사용하기 위한 태그 -->
 <script src="resources/js/sample.js?ver=2"></script>
+<!-- fontawesome을 사용하기 위한 태그  -->
+<script src="https://kit.fontawesome.com/9b2e1e411c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container">
 	<div class="header">
-		<div class="top">
-			<img alt="작은 로고" src="">
-			<ul>
-				<li><a href="#">메뉴</a>
-				<li><a href="#">메뉴</a>
-				<li><a href="#">메뉴</a>
-				<li><a href="#">메뉴</a>
-			</ul>
-			<ul class="login">
-				<li><a href="#">로그인</a>
-				<li><a href="#">회원가입</a>
-				<li><a href="#">전자우편</a>
-			</ul>
-		</div>
-		<div class="bottom">
-			<img alt="로고" src="resources/images/spongebob.png" width="20%;" height="5%;">
-			<div>
-				<input type="text">
-				<button>검색</button>
-			</div>
-			<div class="time">현재 시간</div>
-		</div>
+		<i class="fas fa-hamburger"></i>
+		<h2>Read a book</h2>
+		<ul>
+			<li><i class="fas fa-calculator"></i></li>
+			<li><a href="#">로그인</a></li>
+			<li><a href="#">회원가입</a></li>
+		</ul>
+		<i class="fas fa-grip-lines what"></i>
 	</div>
 </div>
 </body>

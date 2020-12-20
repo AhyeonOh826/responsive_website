@@ -1,33 +1,53 @@
 @charset "UTF-8";
 
- * {
- 	margin: 0;
- 	padding: 0;
- 	list-style: none;
- 	text-decoration: none;
- 	box-sizing: border-box;
- }
- .container{
- 	width: 80%;
- 	margin: 0 auto;
- 	
- }
- .container > div{
- 	width: 100%;
- 	background: yellow;
- 	padding: 10px 0;
- }
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'HeirofLightBold';
+}
 
- .top > ul,li{
- 	display: inline-block;
- 	margin-left: 10px;
- }
- .login{
- 	float: right;
- }
- .bottom > img{
- 	float: left;
- }
-	.time{
-	float: right;
+.container{
+	width:80%;
+	margin: 0 auto;
+}
+
+.header{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; /* container 속성 */
+	align-items: center; /* container 속성 */
+	padding: 10px 20px;
+}
+
+i{
+	font-size: 24px;
+	position: relative; /* static이 디폴트인데 움직일 수있게  */
+	top:3px;
+}
+ .header > .what{
+	display: none;
+}
+.header li {
+	display: inline-block;
+}
+
+.header a {
+	border: 1px solid black;
+	font-size: 12px;
+	display: block;
+	padding: 5px 10px;
+	color: black;
+}
+
+@media screen and (max-width:1000px){
+	ul{
+		display:none;
 	}
+	.header > .what{
+		display: block;
+	}
+}
