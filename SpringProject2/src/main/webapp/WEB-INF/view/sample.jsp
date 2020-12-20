@@ -19,7 +19,7 @@
 	<div class="top_menu" ></div>
 	<div class="container_left">
 		<ul id="menu">
-			<li><a href="#first">메뉴</a></li>		
+			<li><a href="sample2.do">메뉴</a></li>		
 			<li><a href="#fare">메뉴</a></li>		
 			<li><a href="">메뉴</a></li>		
 		</ul>
@@ -47,14 +47,15 @@
 				<img alt="" src="resources/images/spongebob.png" width="100%;" height="100%;"> 
 			</div>
 		</div>
-		<ul>
-			<li><a href="#first">1</a></li>
-			<li><a href="#first">2</a></li>
-			<li><a href="#first">3</a></li>
-		</ul>
-		
-
+		<div id="num">
+			<ul>
+				<li><a href="#first">1</a></li>
+				<li><a href="#first">2</a></li>
+				<li><a href="#first">3</a></li>
+			</ul>
+		</div>
 		<div id="fare">
+			<div>
 			<ul class="fuck">
 				<li>하이하ㅣ</li>
 				<li>하이하ㅣ</li>
@@ -63,14 +64,10 @@
 				<li>하이하ㅣ</li>
 				<li>하이하ㅣ</li>
 			</ul>
-			<ul class="fuck">
-				<li>하이하ㅣ</li>
-				<li>하이하ㅣ</li>
-				<li>하이하ㅣ</li>
-				<li>하이하ㅣ</li>
-				<li>하이하ㅣ</li>
-				<li>하이하ㅣ</li>
-			</ul>
+			
+			
+			</div>
+				
 		</div>
 		<div class="footer" style="width: 100%; height: 300px; background:lightblue;"> footer</div>
 	</div>

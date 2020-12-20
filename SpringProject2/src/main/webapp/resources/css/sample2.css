@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style: none;
+ 	text-decoration: none;
+ 	box-sizing: border-box;
+ }
+ .container{
+ 	width: 80%;
+ 	margin: 0 auto;
+ 	
+ }
+ .container > div{
+ 	width: 100%;
+ 	background: yellow;
+ 	padding: 10px 0;
+ }
+
+ .top > ul,li{
+ 	display: inline-block;
+ 	margin-left: 10px;
+ }
+ .login{
+ 	float: right;
+ }
+ .bottom > img{
+ 	float: left;
+ }
+	.time{
+	float: right;
+	}
