@@ -19,16 +19,22 @@
 <script type="text/javascript">
 	document.addEventListener("DOMContentLoaded", function() {/* DOM(document(HTML) object(객체) model)과 연결 시켜 준다(jquery 에서는 document.ready.function 으로 연결) */
 	    // 실제 함수 호출해서 실행 됨
-	    changeColor();
-	});
+	    // changeColor();
+		// 실행은 무조건 DOM에서 하고 변수는 아무곳에서 선언 해도 되는 듯?
+		 bgChange();
+		// alert(str);
+	}); 
+	// 변수는 function 안이든 밖이든 DOM 실행 안이든 어디든지 사용 할 수 있다
+	var str = "안ㄴ여";
 	
+	// 1번 (랜덤으로 색 변경)
 	function changeColor() {
-	   // 해당 노드
+		// 변경 될 노드
 	   var back = document.getElementsByClassName("color_1");
-	   // color 배열
+	   // 색 배열
 	   var color = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
 	         		 '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D'];
-	   // color 길이
+	   // 색 길이
 	   var colorArrayLen = color.length;
 	   // 배열의 개수 만큼 random 숫자 만들기
 	   var num = Math.floor(Math.random() * colorArrayLen);
@@ -41,6 +47,28 @@
 	   // 1초마다 changeColor 함수 호출하는 함수 
 	   setInterval(changeColor, 1000);
 	}
+	
+	// 2번 증감 연산자 사용 (함수 밖에 선언)
+	var i = 0;
+    function bgChange(){
+	   // 색 배열
+	   var color = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
+   				 '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D'];
+		// 변경 될 노드
+		var back = document.getElementsByClassName("color_1");
+		// 각 class마다 색
+	    back[0].style.background = color[i];
+	   	back[1].style.background = color[i];
+	   	back[2].style.background = color[i];
+	   	// 증감
+	   	i++;
+		// i가 배열의 길이보다 들어나면 0으로 초기화
+       if(i == color.length) {
+           i = 0;
+        };
+        // 1초마다 bgChange 함수 호출하는 함수 
+        setTimeout(bgChange, 1000);
+   }
 </script>
 </head>
 <body>
