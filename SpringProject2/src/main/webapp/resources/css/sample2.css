@@ -1,110 +1,309 @@
-@charset "UTF-8";
-
-*{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-	box-sizing: border-box;
-	font-family: 'HeirofLightBold';
+@CHARSET "UTF-8";
+:root{
+	--color_1: #9999CC;
+	--color_2: #6666CC;
+	--color_3: #3333CC;
 }
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'HeirofLightBold';
+ }
+ .container{
+    width: 80%;
+    margin: 0 auto;
+ }
+ .container > div{
+    width: 100%;
+    padding: 10px 0;
+ }
 
+ .top > ul,li{
+    display: inline-block;
+    margin-left: 10px;
+ }
+ .login{
+    float: right;
+ }
+ .bottom > img{
+    float: left;
+ }
+ 
+.time{
+    float: right;
+} 
+
+/* nav fixed  */
 .header{
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between; /* container 속성 */
-	align-items: center; /* container 속성 */
-	padding: 10px 30px;
-	border-bottom: 1px solid black;
-}
-.header > h2{
-	padding-left: 30px;
-}
-.container{
-	width:80%;
-	margin: 0 auto;
+	position:fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* container 속성 */
+    align-items: center; /* container 속성 */
+    padding: 10px 30px;
+    border-bottom: 1px solid black;
+    background: white;
+    z-index: 999;
 }
 
 i{
-	font-size: 24px;
+    font-size: 24px;
 }
-
-.header > .what{
-	display: none;
+ .header > .what{
+    display: none;
 }
-
 .header li {
-	display: inline-block;
+    display: inline-block;
 }
 
 .header a {
-	border: 1px solid black;
-	font-size: 12px;
-	display: block;
-	padding: 3px 10px;
-	color: black;
-	position: relative;
-	top:-4px;
+    border: 1px solid black;
+    font-size: 12px;
+    display: block;
+    color: black;
+    padding: 3px 10px;
+    color: black;
+    position: relative;
+    top:-4px;
 }
 
-.event {
-	padding:20px 0;
-	text-align: center;	
-	border-bottom: 1px dashed black;
+div.event {
+    padding:20px 0;
+    text-align: center; 
+    border-bottom: 1px dashed black;
+    margin-top :50px;
 }
 
-.event i{
-	padding: 2px 0;
+section.content1{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top:50px;
+    
 }
-section{
-	width: 100%;
-	height: 400px;
-	display: flex;
-	flex-direction: row;
-	margin-top:50px;
-	position: relative;
-}
-section > div {
-	flex-basis: 50%;
+
+section.content1 > div {
+    flex-basis: 50%;
 }
 
 .right > a {
-	font-size: 50px;
-	padding: 0 20px 150px 0;
-	display: block;
-	text-align: right;
+    font-size: 50px;
+    padding: 0 20px 150px 0;
+    display: block;
+    text-align: right;
 }
+
 .right > div > a{
-	font-size: 1.0rem;
-	color: gray;
-	border-bottom: 2px solid gray;
-	margin:0 20px;
+    font-size: 1.0rem;
+    color: gray;
+    border-bottom: 2px solid gray;
+    margin:0 20px;
 }
+
 .right > div > a:last-child{
-	float: right;
-	color: black;
-	border-style: none;
+    float: right;
+    color: black;
+    border-style: none;
 }
 
 .right div:last-child {
-	margin: 30px 20px;
-	line-height: 1.9em;
+    margin: 0 20px;
+    line-height: 2em;
 }
 
-@media screen and (max-width:1000px){
-	ul{
-		display:none;
-	}
-	.header > .what{
-		display: block;
-	}
-	section{
-		flex-direction: column;
-		margin-top:100px;
-	}
-	.right > a{
-		position: absolute;
-		top: -90px;
-	}
+section.content2 {
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	position: relative;
 }
+
+section.content2 > div.books > div {
+	display: inline-block;
+	padding: 50px;
+}
+
+section.content2 > div.books > div:first-child {
+	position: absolute;
+	top:50%;
+	left: 30px;
+}
+
+section.content2 > div.books > div:last-child {
+    position: absolute;
+    top:50%;
+    right: 30px;
+}
+
+div.books_card {
+	width: 25%;
+	padding: 20px;
+	text-align: left;
+}
+
+div.books_card > img,div,h4,h6,p {
+    padding: 5px;
+}
+
+div.books_card  a {
+    color: gray;
+    text-decoration: underline;
+}
+
+section.content3  {
+	width: 100%;
+	text-align: center;
+	padding: 30px;
+}
+
+section.content3 > p  {
+    padding: 40px;
+    font-size: 30px;
+}
+
+section.content3 > ul > li  {
+	font-size: 15px;
+	padding: 30px 60px;
+}
+
+section.news{
+	width: 100%;
+	text-align: top; /* top으로 올려서 */
+	display: flex;
+	flex-direction : row;
+	justify-content : center;
+	border-top : 1px solid black;
+	padding: 50px 0;
+}
+
+section.news > p{
+    font-size:3rem;
+    float: left; /* 글자를 왼쪽에 배치한다 */
+    padding-right: 20px;
+}
+/*  뉴스 레터 */
+section.news_letters {
+    width: 100%;
+    margin-top: 100px;
+}
+
+section.news_letters > div {
+    display: inline-block;
+    height:500px;
+    position: relative; /* class color_1,2,3의 부모  */
+}
+
+section.news_letters > div.news_letters_card_1 {
+	width: 23%;
+}
+
+section.news_letters > div.news_letters_card_2 {
+    width: 48%;
+    margin: 0 10px;
+}
+
+.color_1 {
+	background: var(--color_1);
+	position: absolute; /* class news_letters_card_1 의 자식  */
+	height: 100%;
+	width: 100%;
+	padding: 20px;
+	text-align: right;
+}
+
+.color_1 > div:not(img) {
+	 position:relative;
+	 text-align:left;
+	 margin-top :40px;
+     top:-20px;
+}
+
+.footer {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+	margin-top: 50px;
+	text-align: left;
+}
+
+.footer > div {
+	display: inline-block;
+	width: 33%;
+	margin: 0 auto;
+	border-right: 1px solid black;
+	padding: 20px 20px;
+}
+
+.footer > div  > *{
+	line-height: 30px;
+}
+
+
+
+@media screen and (max-width:1000px){
+    ul{
+        display:none;
+    }
+    
+    .header > .what{
+        display: block;
+    }
+    
+    section.content1 {
+        flex-direction: column;
+        margin-top:100px;
+        width: 100%;
+    }
+    
+    section.content2 {
+        margin-top:100px;
+    }
+    
+   section.news, section.news > img {
+        flex-direction: column;
+        width: 100%;
+    }
+    .right > a{
+        position: absolute;
+        top: -90px;
+    }
+    
+    /* 작은 책 */
+    div.books_card {
+        width: 100%;
+    }
+    
+    /* 슬라이더 왼,오 화살표 */
+    div.swiepr_button_prev > i ,div.switer_button_next > i {
+        display: none;
+    }
+    
+    section.news_letters 
+    > div.news_letters_card_2 {
+        width: 100%;
+        display: block;
+    }
+    
+     section.news_letters > div.news_letters_card_1 {
+        display: none;
+    }
+    
+    .color_1 > img {
+        position:relative;
+        right: 20px;
+    }
+    .color_1 > div {
+    }
+    
+    .footer , .footer > div {
+        width: 100%;
+        display: block;
+        border: none;
+    }
+} 
