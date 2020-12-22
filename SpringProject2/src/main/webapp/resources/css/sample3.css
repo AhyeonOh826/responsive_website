@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+:root{
+	--color_1: #9999CC;
+	--color_2: #6666CC;
+	--color_3: #3333CC;
+}
+/* 셋팅 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'HeirofLightBold';
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+.container > div{
+	width:99.9%;
+	height:200px;
+	text-align:center;
+}
+
+.container > div > p{
+	transform: translate(0, 350%);
+}
+
+.button{
+	width: 80%;
+	margin: 0 auto;
+}
+button{
+	width: 33.4%;
+	border-style:none;
+	outline: none;
+	height: 50px;
+	margin-right:-6px;
+	cursor: pointer;
+}
+
+

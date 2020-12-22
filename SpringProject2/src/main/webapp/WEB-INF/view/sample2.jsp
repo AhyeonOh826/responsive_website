@@ -21,7 +21,7 @@
 	    // 실제 함수 호출해서 실행 됨
 	    // changeColor();
 		// 실행은 무조건 DOM에서 하고 변수는 아무곳에서 선언 해도 되는 듯?
-		 bgChange();
+		 //bgChange();
 		// alert(str);
 	}); 
 	// 변수는 function 안이든 밖이든 DOM 실행 안이든 어디든지 사용 할 수 있다
@@ -40,9 +40,9 @@
 	   var num = Math.floor(Math.random() * colorArrayLen);
 
 	   // 실제 실행
-	   back[0].style.background = color[num];
-	   back[1].style.background = color[num];
-	   back[2].style.background = color[num];
+	   for(var j = 0 ; j < back.length; j++){
+	  	 back[j].style.background = color[num];
+		}
 	   
 	   // 1초마다 changeColor 함수 호출하는 함수 
 	   setInterval(changeColor, 1000);
@@ -72,8 +72,7 @@
 </script>
 </head>
 <body>
-    <!-- 로그인 회원가입  -->
-    <div class="header">
+    <div class="header"><!-- 로그인 회원가입  -->
         <i class="fas fa-bars"></i>
         <h2>Read a book</h2>
         <ul>
@@ -82,19 +81,13 @@
             <li><a href="#">회원가입</a></li>
         </ul>
         <i class="fas fa-grip-lines what"></i>
-    </div>
-
-    <!-- 컨테이너 -->
-    <div class="container">
-        <!-- 이벤트 -->
-        <div class="event">
-            <span>
-                기간 한정: 지금 멤버십에 가입하시면 2021년 다이어리, 한정판 종이책, 스티커를 드려요.더 알아보기
-            </span>
+    </div><!-- 로그인 회원가입  끝 -->
+    <div class="container"><!-- 컨테이너 -->
+        <div class="event"> <!-- 이벤트 -->
+            <span>기간 한정: 지금 멤버십에 가입하시면 2021년 다이어리, 한정판 종이책, 스티커를 드려요.더 알아보기</span>
             <a href="#"><i class="fas fa-arrow-right"></i></a>
-        </div>
-        <!-- content1 -->
-        <section class="content1">
+        </div> <!-- 이벤트 끝 -->
+        <section class="content1"> <!-- content1 -->
             <div class="left">
                 <img alt="사진" src="../images/river-5765785_1920.jpg" width="100%" height="100%">
             </div>
@@ -112,50 +105,48 @@
                     <p>세계는 왜 지금 우주 개발 경쟁에 뛰어들까. 우주 비즈니스는 어디까지 확장될 수 있을까. 인류의 마지막 투자처로 불리는 우주의 가능성을 살펴본다.</p>
                 </div>
             </div>
-        </section>
-        <!-- content2 -->
-        <section class="content2">
+        </section> <!-- content1 끝-->
+        <section class="content2"><!-- content2 -->
           <h2>우주 대항해시대</h2>
-           <div class="books">
-               <div class="swiepr_button_prev"><i class="fas fa-arrow-circle-left"></i></div>
-               <div class="books_card">
-                   <img alt="사진" src="../images/river-5765785_1920.jpg" width="100%" height="100%">
-                   <div>
-	                    <a href="#">경제</a>
-	                    <a href="#">테크</a>
-	                    <a href="#">경제</a>
-                    </div>
-                   <h4>우주 전쟁</h4>
-                   <h6>생명을 찾아 외계로 떠나다.</h6>
-                   <p>세계는 왜 지금 우주 개발 경쟁에 뛰어들까. 우주 비즈니스는 어디까지 확장될 수 있을까. 인류의 마지막 투자처로 불리는 우주의 가능성을 살펴본다.</p>
-               </div>
-               <div class="books_card">
-                   <img alt="사진" src="../images/river-5765785_1920.jpg" width="100%" height="100%">
-                   <div>
-                        <a href="#">경제</a>
-                        <a href="#">테크</a>
-                        <a href="#">경제</a>
-                    </div>
-                   <h4>우주 전쟁</h4>
-                   <h6>생명을 찾아 외계로 떠나다.</h6>
-                   <p>세계는 왜 지금 우주 개발 경쟁에 뛰어들까. 우주 비즈니스는 어디까지 확장될 수 있을까. 인류의 마지막 투자처로 불리는 우주의 가능성을 살펴본다.</p>
-               </div>
-               <div class="books_card">
-                   <img alt="사진" src="../images/river-5765785_1920.jpg" width="100%" height="100%">
-                   <div>
-                        <a href="#">경제</a>
-                        <a href="#">테크</a>
-                        <a href="#">경제</a>
-                    </div>
-                   <h4>우주 전쟁</h4>
-                   <h6>생명을 찾아 외계로 떠나다.</h6>
-                   <p>세계는 왜 지금 우주 개발 경쟁에 뛰어들까. 우주 비즈니스는 어디까지 확장될 수 있을까. 인류의 마지막 투자처로 불리는 우주의 가능성을 살펴본다.</p>
-               </div>
-               <div class="switer_button_next"><i class="fas fa-arrow-circle-right"></i></div>
-           </div>
-        </section>
-         <!-- content3 -->
-        <section class="content2">
+          <div class="books">
+              <div class="swiepr_button_prev"><i class="fas fa-arrow-circle-left"></i></div>
+              <div class="books_card">
+                  <img alt="사진" src="../images/river-5765785_1920.jpg" width="100%" height="100%">
+                  <div>
+                    <a href="#">경제</a>
+                    <a href="#">테크</a>
+                    <a href="#">경제</a>
+                   </div>
+                  <h4>우주 전쟁</h4>
+                  <h6>생명을 찾아 외계로 떠나다.</h6>
+                  <p>세계는 왜 지금 우주 개발 경쟁에 뛰어들까. 우주 비즈니스는 어디까지 확장될 수 있을까. 인류의 마지막 투자처로 불리는 우주의 가능성을 살펴본다.</p>
+              </div>
+              <div class="books_card">
+                  <img alt="사진" src="../images/river-5765785_1920.jpg" width="100%" height="100%">
+                  <div>
+                       <a href="#">경제</a>
+                       <a href="#">테크</a>
+                       <a href="#">경제</a>
+                   </div>
+                  <h4>우주 전쟁</h4>
+                  <h6>생명을 찾아 외계로 떠나다.</h6>
+                  <p>세계는 왜 지금 우주 개발 경쟁에 뛰어들까. 우주 비즈니스는 어디까지 확장될 수 있을까. 인류의 마지막 투자처로 불리는 우주의 가능성을 살펴본다.</p>
+              </div>
+              <div class="books_card">
+                  <img alt="사진" src="../images/river-5765785_1920.jpg" width="100%" height="100%">
+                  <div>
+                       <a href="#">경제</a>
+                       <a href="#">테크</a>
+                       <a href="#">경제</a>
+                   </div>
+                  <h4>우주 전쟁</h4>
+                  <h6>생명을 찾아 외계로 떠나다.</h6>
+                  <p>세계는 왜 지금 우주 개발 경쟁에 뛰어들까. 우주 비즈니스는 어디까지 확장될 수 있을까. 인류의 마지막 투자처로 불리는 우주의 가능성을 살펴본다.</p>
+              </div>
+              <div class="switer_button_next"><i class="fas fa-arrow-circle-right"></i></div>
+          </div>
+        </section><!-- content2 끝-->
+        <section class="content2"><!-- content2 -->
           <h2>스타트업 101</h2>
            <div class="books">
                <div class="swiepr_button_prev"><i class="fas fa-arrow-circle-left"></i></div>
@@ -194,9 +185,8 @@
                </div>
                <div class="switer_button_next"><i class="fas fa-arrow-circle-right"></i></div>
            </div>
-        </section>
-        <!-- 추천 키워드 -->
-        <section class="content3">
+        </section><!-- content2 끝 -->
+        <section class="content3"><!-- 추천 키워드 -->
             <p>추천 키워드</p>
             <ul>
                 <li>프라임 Life</li>
@@ -206,15 +196,13 @@
                 <li>이코노미스트</li>
             </ul>
               <a href="#"><i class="fas fa-arrow-right"></i></a>
-        </section>
-        <!-- 뉴스 -->
-        <section class="news">
+        </section><!-- 추천 키워드 끝 -->
+        <section class="news"><!-- 뉴스 -->
             <p>뉴스</p>
              <img alt="사진" src="../images/river-5765785_1920.jpg" width="50%" height="100%">
-        </section>
-    </div>
-    <!--news letters  -->
-    <section class="news_letters">
+        </section><!-- 뉴스 끝-->
+    </div><!-- container 끝 -->
+    <section class="news_letters"><!--news letters  -->
         <div class="news_letters_card_1">
             <div class="color_1"></div>
         </div>
@@ -236,9 +224,8 @@
         <div class="news_letters_card_1">
             <div class="color_1"></div>  
         </div>
-    </section>
-    <!-- footer -->
-    <footer class="footer">
+    </section><!--news letters 끝 -->
+    <footer class="footer"><!-- footer -->
         <div>
             <h2>THREECHAIRS</h2>
             <h2>PUBLISHING COMPANY</h2>
@@ -257,6 +244,6 @@
             <p>(주)스리체어스 서울시 중구 3층</p>
             <p>(주)스리체어스 서울시 중구 3층스리체어스 서울시 중구 3층스리체어스 서울시 중구 3층</p>
         </div>
-    </footer>
+    </footer><!-- footer 끝 -->
 </body>
 </html>

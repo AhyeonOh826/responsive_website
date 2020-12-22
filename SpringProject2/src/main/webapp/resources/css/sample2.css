@@ -4,6 +4,7 @@
 	--color_2: #6666CC;
 	--color_3: #3333CC;
 }
+/* 셋팅 */
 * {
     margin: 0;
     padding: 0;
@@ -11,26 +12,31 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: 'HeirofLightBold';
- }
- .container{
+}
+ 
+/* 컨테이너  */
+.container{
     width: 80%;
     margin: 0 auto;
- }
- .container > div{
+}
+ 
+.container > div{
     width: 100%;
     padding: 10px 0;
- }
+}
 
- .top > ul,li{
+.top > ul,li{
     display: inline-block;
     margin-left: 10px;
- }
- .login{
+}
+ 
+.login{
     float: right;
- }
- .bottom > img{
+}
+ 
+.bottom > img{
     float: left;
- }
+}
  
 .time{
     float: right;
@@ -53,9 +59,11 @@
 i{
     font-size: 24px;
 }
- .header > .what{
+
+.header > .what{
     display: none;
 }
+
 .header li {
     display: inline-block;
 }
@@ -196,7 +204,7 @@ section.news_letters {
 section.news_letters > div {
     display: inline-block;
     height:500px;
-    position: relative; /* class color_1,2,3의 부모  */
+    position: relative; /* class color_1의 부모  */
 }
 
 section.news_letters > div.news_letters_card_1 {
@@ -210,7 +218,7 @@ section.news_letters > div.news_letters_card_2 {
 
 .color_1 {
 	background: var(--color_1);
-	position: absolute; /* class news_letters_card_1 의 자식  */
+	position: absolute; /* class news_letters_card_1(section.news_letters > div) 의 자식  */
 	height: 100%;
 	width: 100%;
 	padding: 20px;
@@ -243,7 +251,6 @@ section.news_letters > div.news_letters_card_2 {
 .footer > div  > *{
 	line-height: 30px;
 }
-
 
 
 @media screen and (max-width:1000px){
