@@ -57,6 +57,5 @@ function showMyCity(city,x,color){
 	 	<button class="button1" onclick="showMyCity('Ulsan',this,'red');">Ulsan</button>
 	 	<button class="button1" onclick="showMyCity('Seoul',this,'blue');">Seoul</button>
  	</div>
-
 </body>
 </html>
