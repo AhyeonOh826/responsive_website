@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     // callback이란? A callback function is executed after the current effect is 100% finished. 
-    // hide 후에 alert 창 뜸
+    // hide 후에 alert 창 뜸 sdf
     $("button").click(function(){
         // $(selector).hide(speed,callback);
         // callback - function(){ 안에 내용 적음};
