@@ -21,7 +21,7 @@
 		<ul id="menu">
 			<li><a href="sample2.do">메뉴</a></li>		
 			<li><a href="sample3.do">메뉴</a></li>		
-			<li><a href="">메뉴</a></li>		
+			<li><a href="sample4.do">메뉴</a></li>		
 		</ul>
 	</div>
 	<div class="container_right">

@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+:root{
+	--color_1: #9999CC;
+	--color_2: #6666CC;
+	--color_3: #3333CC;
+}
+/* 셋팅 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'HeirofLightBold';
+}
+
+img:first-child{
+	width: 1500px;
+	height:800px;
+	position: relative;
+	transition : all 0.5s ease;
+	overflow: hidden;
+}
+
+img:last-child{
+	position:absolute;
+	width: 100%;
+	height:500px;
+	right: 0;
+	transition : all 0.5s ease;
+	overflow: hidden;
+}
+

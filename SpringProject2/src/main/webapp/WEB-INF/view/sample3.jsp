@@ -8,7 +8,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <!-- sample.css 파일 사용을 위한 태그 -->
-<link rel="stylesheet" type="text/css" href="resources/css/sample3.css?ver=87"/>
+<link rel="stylesheet" type="text/css" href="resources/css/sample4.css?ver=12"/>
 <link rel="stylesheet" type="text/css" href="resources/css/font.css?ver=6"/>
 <!-- Jquey를 사용을 위한 태그 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,44 +18,44 @@
 <script src="https://kit.fontawesome.com/9b2e1e411c.js" crossorigin="anonymous"></script>
 <script type="text/javascript">
 	document.addEventListener("DOMContentLoaded", function() {
-		// 화면 뜨자마자 click 했다고 바로 효과 주기 click 하면 showMycity가 자동으로 실행 됨
-		document.getElementById("defaultOpen").click();
+	
 	});
 
-function showMyCity(city,x,color){
-		var content = document.getElementsByClassName('con');
-		var button = document.getElementsByClassName('button1');
-		// 모두 리셋 한다
-		for(var i = 0; i < content.length; i++){
-			content[i].style.display = 'none';
-		}
-		// 버튼 색도 리셋 한다
-		for(var j = 0; j < button.length; j++){
-			button[j].style.background = "";
-		}
+	var x = 0;
+	var y = 0 ;
+	var mx = 0;
+	var my = 0;
+	var speed = 0.3;
+	var back;
+	var flower;
+	
+	window.onload = function (){
+	back = document.getElementsByClassName('back')[0];
+	flower = document.getElementsByClassName('flower')[0];
 
-		document.getElementById(city).style.background = color;
-		document.getElementById(city).style.display = 'block';
-		x.style.background = color;
+	window.addEventListener('mousemove', mouseFunc, false);
+
+	function mouseFunc(e){
+		x = (e.clientX - window.innerWidth /2);
+		y = (e.clientY - window.innerHeight / 2);
+
+		}
+		loop();
 	}
+
+	function loop(){
+	mx += (x - mx) * speed;
+	my += (y - my) * speed;
+	console.log(mx, my);
+	flower.style.transform = 'translate(' + -(mx/10) +'px,'+ -(my/10) +'px)';
+
+	window.requestAnimationFrame(loop);
+	}
+	
 </script>
 </head>
 <body>
-	<div class="container">
-		<div id="Busan" class="con">
-			<p>Busan</p>
-		</div>
-		<div id="Ulsan" class="con">
-			<p>Ulsan</p>
-		</div>
-		<div id="Seoul" class="con">
-			<p>Seoul</p>
-		</div>
-	</div>
- 	<div class="button">
-	 	<button class="button1" onclick="showMyCity('Busan',this,'pink');" id="defaultOpen">Busan</button>
-	 	<button class="button1" onclick="showMyCity('Ulsan',this,'red');">Ulsan</button>
-	 	<button class="button1" onclick="showMyCity('Seoul',this,'blue');">Seoul</button>
- 	</div>
+		<img class="back" alt="꽃배경" src="resources/images/제목을-입력해주세요.-1.png" width="100%" height="100%">
+		<img class="flower" alt="꽃" src="resources/images/제목을-입력해주세요.-3.png" width="100%" height="100%">
 </body>
 </html>

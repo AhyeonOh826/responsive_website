@@ -22,6 +22,11 @@ public class SampleController {
 	public String sample3() {
 		return "sample3";
 	}
+	
+	@RequestMapping(value = "/sample4.do")
+	public String sample4() {
+		return "sample4";
+	}
 }
 
 
