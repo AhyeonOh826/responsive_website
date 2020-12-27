@@ -42,7 +42,7 @@
 		}
 		loop();
 	}
-
+  
 	function loop(){
 	mx += (x - mx) * speed;
 	my += (y - my) * speed;
