@@ -8,7 +8,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <!-- sample.css 파일 사용을 위한 태그 -->
-<link rel="stylesheet" type="text/css" href="resources/css/sample4.css?ver=12"/>
+<link rel="stylesheet" type="text/css" href="resources/css/sample4.css?ver=8"/>
 <link rel="stylesheet" type="text/css" href="resources/css/font.css?ver=6"/>
 <!-- Jquey를 사용을 위한 태그 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -55,7 +55,10 @@
 </script>
 </head>
 <body>
+<div>
 		<img class="back" alt="꽃배경" src="resources/images/제목을-입력해주세요.-1.png" width="100%" height="100%">
 		<img class="flower" alt="꽃" src="resources/images/제목을-입력해주세요.-3.png" width="100%" height="100%">
+</div>
+<div class="watch">asdfasf</div>
 </body>
 </html>
