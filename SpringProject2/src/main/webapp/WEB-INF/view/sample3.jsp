@@ -55,10 +55,10 @@
 </script>
 </head>
 <body>
-<div>
+	<div>
 		<img class="back" alt="꽃배경" src="resources/images/제목을-입력해주세요.-1.png" width="100%" height="100%">
 		<img class="flower" alt="꽃" src="resources/images/제목을-입력해주세요.-3.png" width="100%" height="100%">
-</div>
-<div class="watch">asdfasf</div>
+	</div>
+<div class="watch"><a href="sample5.do"></a></div>
 </body>
 </html>
