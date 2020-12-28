@@ -21,7 +21,7 @@
 		// 화면 뜨자마자 click 했다고 바로 효과 주기 click 하면 showMycity가 자동으로 실행 됨
 		document.getElementById("defaultOpen").click();
 	});
-
+ 
 function showMyCity(city,x,color){
 		var content = document.getElementsByClassName('con');
 		var button = document.getElementsByClassName('button1');
