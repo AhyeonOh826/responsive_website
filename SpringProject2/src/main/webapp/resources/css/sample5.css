@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+
+/* 셋팅 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'HeirofLightBold';
+}
+
+div.container{
+	width:100%;
+	height:500px;
+	display: grid;
+	grid-template-columns: 30% 50% 20%;
+	grid-template-rows:20% 50% 40%;
+}
+
+div.div1{
+	background: red;
+	grid-column: 1 /2;
+	grid-row: 1 / 3;
+}
+
+div.div2{
+	background: yellow;
+	grid-column: 2 / 4;
+	grid-row: 1 / 3;
+}
+
+div.div3{
+	background: green;
+	grid-column: 1 / 2;
+	grid-row: 3 / 4;
+}
+
+div.div4{
+	background: pink;
+	grid-column: 2 / 4;
+	grid-row: 3 / 4;
+}
+
+div.div5{
+	background: blue;
+	grid-column: 3 / 4;
+	grid-row: 2 / 4;
+}
+
+div.div6{
+	background: purple;
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
