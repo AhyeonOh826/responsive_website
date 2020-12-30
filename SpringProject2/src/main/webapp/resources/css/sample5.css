@@ -53,3 +53,37 @@ div.div6{
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
 }
+
+div.cusor{
+	position:absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	pointer-events:none;
+	mix-blend-mode: multiply; /* circle의 선명도?*/
+	opacity: 0.5s;
+}
+div.hello{
+	margin: 50px;
+}
+div.cusor > span.circle {
+	position: fixed;
+	display: block;
+	width:120px;
+	height: 120px;
+	border-radius: 50%;
+	background: lightblue;
+	transition: all 0.5s ease-out;
+}
+
+a{
+	display: block;
+	padding: 20px;
+	background: red;
+}
+
+a:hover{
+	background: black;
+	color:white;
+}
+
