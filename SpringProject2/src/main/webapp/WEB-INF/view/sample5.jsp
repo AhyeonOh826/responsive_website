@@ -19,7 +19,6 @@
 <script type="text/javascript">
 	var hiBtn = querySelector('#hiBtn');
 	var noHiBtn = querySelector('#noHiBtn');
-
 	alert(hiBtn);
 	alert(noHiBtn);
 </script>
