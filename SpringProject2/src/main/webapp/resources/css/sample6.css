@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+
+/* 셋팅 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'HeirofLightBold';
+}
+
+header.header{
+	background: lightgray;
+	width: 100%;
+	height: 500px;
+}
+
+nav.menu_wrap{
+	width: 80%;
+	margin: 0 auto;
+	background: gray;
+	height: 10%; /* 메뉴바 길이 정하고  */
+}
+
+div.frame{
+	padding: 12px 20px; /* 안에 내용물들은 패딩준다 */
+} 
+
+nav.menu_wrap > div  {
+	display: inline-block;
+}
+
+div.menu >  ul > li {
+	display: inline-block;
+	padding: 12px 20px;/* 안에 내용물들은 패딩준다 */
+}
+
+div.menu {
+	float: right;
+}
+
+div.content{
+	height:80%;
+}
+
+div.content > div {
+	height:50%;
+	width: 55%;
+	transform: translateY(40%); /* 따로 position 없어도 가능하네! */
+	background: yellow;
+}
+
+div.content > div > h2, p {
+	padding: 20px;
+	transform: translate(20%,35%);
+}
+
+div.point {
+	height: 10%;
+	width: 100%;
+	text-align: center;
+}
+
+div.point > span {
+	border-radius: 50%;
+	background: red;
+	line-height: 50px;
+	padding: 0 10px;
+	margin-right:10px;
+}
