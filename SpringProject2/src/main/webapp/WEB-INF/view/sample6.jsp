@@ -126,6 +126,8 @@
             <div class="title_content"></div>
          </div>
          <!-- // service_2  title -->
+         
+         
          <!--  service_2 content bottom -->
         <div class="service_2_bottom">
       	   <!--  service_2  menu bar -->
@@ -162,6 +164,10 @@
            <!-- // image  -->
         </div>
         <!-- // service_2 content bottom --> 
+        
+        
+        
+        
     </div>
     <!-- // service_2 -->
     <!-- about us -->
