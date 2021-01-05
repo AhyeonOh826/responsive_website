@@ -371,11 +371,9 @@ div.rank_wrap{
 
 div.rank_card{
 	width: 24%;
-	height: 80%;
+	height: 100%;
 	background: pink;
 	display: inline-block;
-	margin-right: 8px;
-	margin-top: 26px;
 }
 
 div.rank_card div{
@@ -385,18 +383,15 @@ div.rank_card div{
 
 div.rank_card div:NTH-CHILD(1){
     height: 30%; 
-    background: red;
 }
 
 div.rank_card div:NTH-CHILD(2){
     height: 40%; 
-    background: red;
     margin: 20px 0;
 }
 
 div.rank_card div:NTH-CHILD(3){
-    height: 18%; 
-    background: red;
+    height: 16%; 
 }
 
 /* quotes */
