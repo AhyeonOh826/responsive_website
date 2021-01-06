@@ -37,6 +37,11 @@ public class SampleController {
 	public String sample6() {
 		return "sample6";
 	}
+	
+	@RequestMapping(value = "/sample7.do")
+	public String sample7() {
+		return "sample7";
+	}
 }
 
 
