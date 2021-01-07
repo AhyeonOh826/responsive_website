@@ -18,122 +18,372 @@
 <script src="https://kit.fontawesome.com/9b2e1e411c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<!-- header  -->
-	<header>
-		<!-- top-->
-		<div class="header_top_wrap">
-			<!-- row -->
-			<div class="header_top_row">
-				<!-- left-social icon  -->
-				<div> 
-					<div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-					</div>
-				</div>
-				<!--// left-social icon  -->
-				<!-- right- login  -->
-				<div> 
-					<div>
-						<div></div>
-						<div></div>
-					</div>
-				</div>
-				<!--// right- login  -->
-			</div>
-			<!-- //row -->
-		</div> 
-		<!--// top-->
-		<!-- middel-->
-		<div class="header_middle_wrap">
-			<div class="header_middle_row">
-				<!-- logo -->
-				<div></div>
-				<!-- //logo -->
-				<!-- search bar -->
-				<div>
-					<div></div>
-					<div></div>
-				</div>
-				<!-- //search bar -->
-				<!-- cart -->
-				<div>
-					<div></div>
-					<div></div>
-				</div>
-				<!-- //cart -->
-			</div>	
-		</div>
-		<!--// middel-->
-		<!-- bottom  -->
-		<nav class="header_bottom_wrap">
-			<!-- left-shop category  -->
-			<div></div>
-			<!-- // left-shop category  -->
-			<!--  right-menu bar  -->
-			<div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<!-- // right-menu bar  -->
-		</nav>
-		<!-- //bottom  -->
-	</header>
-	<!-- // header  -->
-	<!-- campaign -->
-	<section class="campaign_wrap">
-		<!-- top -->
-		<div>
-			<div></div>
-			<div></div>
-		</div>
-		<!--  // top -->
-		<!-- bottom -->
-		<div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-		<!--// bottom -->
-	</section>
-	<!--// campaign -->
-	<!-- direct -->
-	<section class="direct_wrap">
-		<div></div>
-	</section>
-	<!-- // direct -->
-	<!-- trending -->
-	<section class="trending_items_wrap">
-		<div></div>
-		<div></div>
-		<div></div>
-	</section>
-	<!-- // trending -->
-	<!-- popular -->
-	<section class="popular_wrap">
-		<div></div>
-		<div></div>
-		<div></div>
-	</section>
-	<!-- // popular -->
-	<!-- blog  -->
-	<section class="blog_wrap">
-		<div></div>
-		<div></div>
-	</section>
-	<!-- // blog  -->
-	<!-- footer -->
-	<footer>
-		<div></div>
-		<div></div>
-	</footer>
-	<!-- // footer -->
+	 <!-- header -->
+   <header class="header">
+        <!-- social -->
+        <section class="header_row_1">
+            <div class="header_social_wrap">
+                <!-- left - social  -->
+                <div>
+                    <div class="social_wrap">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- // left - social  -->
+                 <!-- right - login -->
+                <div>
+                    <div class="login_wrap">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- // right - login -->
+            </div>
+        </section>
+         <!-- //social -->
+         <!-- logo-->
+         <section class="header_row_2">
+            <div>
+	            <div>
+	                <div></div>
+	            </div>
+	            <div class="search_bar_wrap">
+	               <div></div>
+	               <div></div>
+	            </div>
+	            <div class="shopping_cart">
+	               <div></div>
+	               <div></div>
+	            </div>
+            </div>
+         </section>
+         <!-- //logo-->
+         <!-- nav-->
+         <nav class="header_row_3">
+            <div>
+            	<!-- left -->
+                <div>
+                	<div></div>
+                </div>
+                <!-- // left -->
+                <!-- right-->
+                <div>
+                	<div class="menu_wrap">
+                		<ul>
+                			<li></li>
+                			<li></li>
+                			<li></li>
+                			<li></li>
+                			<li></li>
+                			<li></li>
+                			<li></li>
+                		</ul>
+                	</div>
+                </div>
+                <!-- // right-->
+            </div>            
+         </nav>
+         <!-- //nav-->
+   </header> 
+   <!-- // header -->
+   <!--  campaign-->
+   <section class="campaign">
+   		<!-- top -->
+   		<div class="campaign_image1_wrap">
+   			<div></div>
+   			<div></div>
+   		</div>
+   		<!--// top -->
+   		<!--bottom -->
+   		<div class="campaign_image2_wrap">
+   			<div></div>
+   			<div></div>
+   			<div></div>
+   		</div>
+   		<!--// bottom -->
+   </section>
+   <!-- // campaign-->
+   <!-- direct -->
+   <section class="direct">
+   		<div>
+   			<ul>
+   				<li>
+   					<div>
+   						<div></div>
+   					</div>
+   					<div>
+   						<div></div>
+   						<div></div>
+   					</div>
+   				</li>
+   				<li>
+   					<div>
+   						<div></div>
+   					</div>
+   					<div>
+   						<div></div>
+   						<div></div>
+   					</div>
+   				</li>
+   				<li>
+   					<div>
+   						<div></div>
+   					</div>
+   					<div>
+   						<div></div>
+   						<div></div>
+   					</div>
+   				</li>
+   				<li>
+   					<div>
+   						<div></div>
+   					</div>
+   					<div>
+   						<div></div>
+   						<div></div>
+   					</div>
+   				</li>
+   			</ul>
+   		</div>
+   </section>
+   <!--  //direct -->
+   <!-- best seller -->
+   <section	class="best_seller">
+   		<!-- top menu -->
+   		<nav class="best_menu_wrap">
+   			<div>
+   				<div>
+   					<ul>
+   						<li></li>
+   						<li></li>
+   					</ul>
+   				</div>
+   			</div>
+   			<div></div>
+   		</nav>
+   		<!-- // top menu -->
+   		<!-- best content -->
+   		<div class="best_content_wrap">
+   			<div class="best_content">
+   				<ul>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>   					
+   				</ul>
+   			</div>   		
+   		</div>
+   		<div class="best_content_wrap">
+   			<div class="best_content">
+   				<ul>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>   					
+   				</ul>
+   			</div>   		
+   		</div>
+   		<!-- // best content -->
+   </section>
+   <!-- // best seller -->
+   <div class="for_line"></div>
+   <!-- trending   -->
+   	  <section	class="best_seller">
+   		<!-- top menu -->
+   		<nav class="best_menu_wrap">
+   			<div>
+   				<div>
+   					<ul>
+   						<li></li>
+   						<li></li>
+   					</ul>
+   				</div>
+   			</div>
+   			<div></div>
+   		</nav>
+   		<!-- // top menu -->
+   		<!-- best content -->
+   		<div class="best_content_wrap">
+   			<div class="best_content">
+   				<ul>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>   					
+   				</ul>
+   			</div>   		
+   		</div>
+   		<div class="best_content_wrap">
+   			<div class="best_content">
+   				<ul>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>
+   					<li>
+   						<div></div>
+   						<div>
+   							<p></p>
+   							<p></p>
+   						</div>
+   					</li>   					
+   				</ul>
+   			</div>   		
+   		</div>
+   		<!-- // best content -->
+   </section>  
+   <!--// trending  -->
+   <!-- footer -->
+   <footer>
+   		<div>
+	   		<!-- footer menu -->
+   			<section>
+   				<div>
+   					<h3></h3>
+   					<p></p>
+   					<p></p>
+   					<p></p>
+   					<p></p>
+   					<ul>
+   						<li></li>
+   						<li></li>
+   						<li></li>
+   						<li></li>
+   						<li></li>
+   					</ul>
+   				</div>
+   				<div>
+   					<h3></h3>
+   					<p></p>
+   					<p></p>
+   					<p></p>
+   					<p></p>
+   					<p></p>
+   					<p></p>
+   				</div>
+   				<div>
+   					<h3></h3>
+   					<p></p>
+   					<p></p>
+   					<p></p>
+   					<p></p>
+   				</div>
+   				<div>
+   					<h3></h3>
+   					<p></p>
+   					<p></p>
+   					<p></p>
+   					<p></p>
+   					<p></p>
+   				</div>
+   			</section>
+   			<!-- //footer menu -->
+   			<!-- footer copy right -->
+   			<section class="footer_bottom_wrap">	
+   				<div>
+   					<p></p>
+   					<p></p>
+   				</div>
+   			</section>
+   			<!-- // footer copy right -->
+   		</div>
+   </footer>
+   <!-- // footer -->
 </body>
 </html>
