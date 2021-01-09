@@ -13,6 +13,7 @@ div.container {
    max-width: 1024px;
    margin: 0 auto;
    background: lightgray;
+   padding: 5px;
 }
 
 /* header */
@@ -23,19 +24,35 @@ header{
 
 /* social in header */
 .secSocialWrap > div {
+	display: inline-block;
+	background: green;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.secSocialWrap > div:first-child {
+	min-width: 77%;
+}
+
+.secSocialWrap > div:last-child {
+	min-width: 22%;
+	text-align: right;
+	margin-left: 5px;
+}
+
+
+.secSocialWrap > div > div {
 	background: yellow;
 	padding: 5px;
 	display: inline-block;
 }
 
-.secSocialWrap > div > p{
+.secSocialWrap > div > div > p{
 	min-width:100px;
-	min-height: 50px;
+	min-height: 30px;
 	margin-right: 1px;
 	background: red;
 	display: inline-block;
-	font-size: 10px;
-	color: white;
 	vertical-align: top;
 }
 
@@ -44,18 +61,15 @@ header{
 	display: inline-block;
 	background: yellow;
 	padding: 5px;
-	float: right;
 }
 
 .secSocialWrap ul li{
-	min-height:  50px;
-	min-width: 50px;
+	min-height:  30px;
+	min-width: 30px;
 	display: inline-block;
 	background: green;
 	margin-right: 1px;
 	vertical-align: top;
-	font-size: 10px;
-	color: white;
 }
 
 /* nav in header */
@@ -63,7 +77,23 @@ header{
 	margin-top: 5px;
 }
 
-.secNavWrap > div{
+.secNavWrap > div {
+	display: inline-block;
+	background: green;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.secNavWrap > div:first-child {
+	min-width: 44%;
+}
+
+.secNavWrap > div:last-child {
+	min-width: 55%;
+	text-align: right;
+	margin-left: 5px;
+}
+.secNavWrap > div > div{
 	min-width: 100px; /* 보니깐 인라인이 되야 먹네 */
 	min-height: 40px;
 	background: red;
@@ -71,7 +101,7 @@ header{
 	display: inline-block;
 }
 
-.secNavWrap > div > div{
+.secNavWrap > div > div > div{
 	min-width: 100px; /* 보니깐 인라인이 되야 먹네 */
 	min-height: 40px;
 	background: yellow;
@@ -85,7 +115,6 @@ header{
 	background: yellow;
 	min-width: 20px;
 	padding: 5px;
-	float: right;
 }
 
 .secNavWrap ul li{
@@ -94,9 +123,9 @@ header{
 	display: inline-block;
 	background: green;
 	margin-right: 1px;
+	vertical-align: top;
 	font-size: 10px;
 	color: white;
-	vertical-align: top;
 }
 
 /* campaign */
@@ -106,6 +135,257 @@ header{
 }
 
 .campaignImageWrap{
-	min-height: 500px;
 	background: pink;
+	line-height: 5.0;
+	font-size: 30px;
 }
+
+.campaignImageWrap > div{
+	background: red;
+	max-width: 300px;
+	padding: 5px;
+	line-height: 1.0;
+}
+
+.campaignImageWrap > div > h2{
+	min-height: 50px;
+	background: yellow;
+}
+
+.campaignImageWrap > div > p{
+	min-height: 100px;
+	background: blue;
+}
+
+.campaignImageWrap > div > div{
+	min-height: 50px;
+	background: yellow;
+	padding: 5px;
+}
+
+.campaignImageWrap button{
+	min-height: 50px;
+	background: red;
+	min-width: 40%;
+	margin-right: 5px;
+}
+
+/* primary */
+.primaryRow{
+	background: blue;
+}
+
+.primaryContentWrap ul > li{
+	display: inline-block;
+	background: pink;
+	min-width: calc(33% - 5px);
+}
+
+.primaryContentWrap ul > li:nth-last-child(2){
+	margin: 0 10px;
+}
+
+.primaryContentWrap ol > li{
+	background: lightblue;
+	min-height: 50px;
+	padding: 5px;
+}
+
+.primaryContentWrap ol > li:last-child{
+	margin-top: 10px;
+}
+
+.primaryContentWrap ol > li:first-child > div{
+	background: red;
+	min-height: 50px;
+	min-width: 49%;
+	display: inline-block;
+}
+
+.primaryContentWrap ol > li:first-child > div:last-child{
+	margin-left: 5px;
+}
+
+/* health service */
+.serviceRow{
+	background: gray;
+}
+
+.serviceContentWrap {
+	background: yellow;
+	min-height: 100px;
+	padding: 5px;
+}
+
+.serviceContentWrap > div{
+	background: red;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.serviceContentWrap > div > *{
+	background: pink;
+	min-height: 50px;
+	min-width: calc(50% - 5px);
+	display: inline-block;
+}
+
+.serviceContentWrap > div > p{
+	margin-left: 10px;
+}
+
+.serviceContentWrap ul > li{
+	display: inline-block;
+	background: pink;
+	min-width: calc(33% - 5px);
+	min-height: 100px;
+	padding: 5px;
+}
+
+.serviceContentWrap ul > li:nth-child(2){
+	margin: 0 10px;
+}
+
+.serviceContentWrap ul > li:nth-last-child(2){
+	margin: 0 10px;
+}
+
+.serviceContentWrap ol > li{
+	background: lightblue;
+	min-height: 50px;
+	padding: 5px;
+}
+
+.serviceContentWrap ol > li:not(:first-child){
+	margin-top: 10px;
+}
+
+.serviceContentWrap ol > li:first-child > div{
+	background: red;
+	min-height: 50px;
+	max-width: 50px;
+}
+
+/* service image */
+.serviceImageRow{
+	background: lightblue;
+	padding: 5px;
+}
+
+.serviceImageWrap{
+	background: pink;
+	text-align: right;
+	line-height: 10.0; /* 설정 되어 있는 높이보다 작아서 안먹음 */
+	font-size: 50px;
+	color: black;
+}
+
+.serviceImageWrap > div{
+	background: red;
+	min-width: 300px;
+	padding: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.serviceImageWrap > div > *{
+	background: yellow;
+	min-height: 60px;
+}
+
+.serviceImageWrap > div > *:not(:last-child){
+	margin-bottom: 10px;
+}
+
+/* experience doctor  */
+.doctorRow{
+	background: gray;
+}
+
+.doctorContentWrap {
+	background: yellow;
+	min-height: 100px;
+	padding: 5px;
+}
+
+.doctorContentWrap > div{
+	background: red;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.doctorContentWrap > div > *{
+	background: pink;
+	min-height: 50px;
+	min-width: calc(50% - 5px);
+	display: inline-block;
+}
+
+.doctorContentWrap > div > p{
+	margin-left: 10px;
+}
+
+.doctorContentWrap ul > li{
+	display: inline-block;
+	background: pink;
+	min-width: calc(33% - 5px);
+	min-height: 100px;
+	padding: 5px;
+}
+
+.doctorContentWrap ul > li:nth-child(2){
+	margin: 0 10px;
+}
+
+.doctorContentWrap ul > li:nth-last-child(2){
+	margin: 0 10px;
+}
+
+.doctorContentWrap ol > li{
+	background: green;
+	padding: 5px;
+}
+
+.doctorContentWrap ol > li:nth-child(1){
+	min-height: 150px;
+}
+
+.doctorContentWrap ol > li:nth-child(2){
+	margin: 10px 0;
+}
+
+.doctorContentWrap ol > li:nth-child(2) > *{
+	background: red;
+	min-height: 20px;
+	margin-bottom: 5px;
+	
+}
+
+.doctorSocialWrap{
+}
+
+.doctorSocialWrap > div{
+	background: yellow;
+	min-width: calc(49% - 2px);
+	display: inline-block;
+	min-height: 30px;
+	padding: 5px;
+	vertical-align:top;
+	margin-left: 5px;
+}
+
+.doctorSocialWrap > div:last-child > ul {
+	display: flex;
+	flex-direct:  row;
+	justify-content: space-between;
+}
+
+.doctorSocialWrap > div:last-child > ul > li{
+	background: red;
+	min-height: 20px;
+	min-width: 20%;
+	vertical-align:top;
+	margin: 0;
+}
+
+
