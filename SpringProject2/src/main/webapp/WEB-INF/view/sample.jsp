@@ -20,7 +20,7 @@
 	<div class="container_left">
 		<ul id="menu">
 			<li><a href="sample2.do">sample2</a></li>		
-			<li><a href="sample3.do">sample3</a></li>		
+			<li><a href="sample8.do">sample8</a></li>		
 			<li><a href="sample4.do">sample4</a></li>		
 			<li><a href="sample6.do">sample6</a></li>		
 			<li><a href="sample7.do">sample7</a></li>		

@@ -1,53 +1,751 @@
 @CHARSET "UTF-8";
-:root{
-	--color_1: #9999CC;
-	--color_2: #6666CC;
-	--color_3: #3333CC;
-}
-/* 셋팅 */
+
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: 'HeirofLightBold';
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   box-sizing: border-box;
+   font-size: 0;
 }
 
-img:first-child{
-	width: 100%;
-	height:800px;
-	position: relative;
-	transition : all 1000ms cubic-bezier(0.545, -0.090, 0.270, 1.090);;
+div.container {
+   max-width: 1024px;
+   margin: 0 auto;
+   background: lightgray;
+   padding: 5px;
 }
 
-img:last-child{
-	position:absolute;
-	width: 100%;
-	height:500px;
-	right: 0;
-	transition : all 1000ms cubic-bezier(0.545, -0.090, 0.270, 1.090);;
+/* header */
+header{
+	background: gray;
+	padding: 5px;
 }
 
-.watch{
-	width:100px;
-	height:100px;
-	background: url('../images/spongebob.png') no-repeat;
-	background-size: cover;
-	animation: pic 0.3s linear 0.1s infinite both;
+/* social in header */
+.secSocialWrap > div {
+	display: inline-block;
+	background: green;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.secSocialWrap > div:first-child {
+	min-width: 77%;
+}
+
+.secSocialWrap > div:last-child {
+	min-width: 22%;
+	text-align: right;
+	margin-left: 5px;
+}
+
+
+.secSocialWrap > div > div {
+	background: yellow;
+	padding: 5px;
+	display: inline-block;
+}
+
+.secSocialWrap > div > div > p{
+	min-width:100px;
+	min-height: 30px;
+	margin-right: 1px;
+	background: red;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.secSocialWrap ul{
+	display: inline-block;
+	background: yellow;
+	padding: 5px;
+}
+
+.secSocialWrap ul li{
+	min-height:  30px;
+	min-width: 30px;
+	display: inline-block;
+	background: green;
+	margin-right: 1px;
+	vertical-align: top;
+}
+
+/* nav in header */
+.secNavWrap {
+	margin-top: 5px;
+}
+
+.secNavWrap > div {
+	display: inline-block;
+	background: green;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.secNavWrap > div:first-child {
+	min-width: 44%;
+}
+
+.secNavWrap > div:last-child {
+	min-width: 55%;
+	text-align: right;
+	margin-left: 5px;
+}
+.secNavWrap > div > div{
+	min-width: 100px; /* 보니깐 인라인이 되야 먹네 */
+	min-height: 40px;
+	background: red;
+	padding: 5px;
+	display: inline-block;
+}
+
+.secNavWrap > div > div > div{
+	min-width: 100px; /* 보니깐 인라인이 되야 먹네 */
+	min-height: 40px;
+	background: yellow;
+	display: inline-block;
+	margin-right: 1px;
+	vertical-align: top;
+}
+
+.secNavWrap ul{
+	display: inline-block;
+	background: yellow;
+	min-width: 20px;
+	padding: 5px;
+}
+
+.secNavWrap ul li{
+	min-height: 40px;
+	min-width: 60px;
+	display: inline-block;
+	background: green;
+	margin-right: 1px;
+	vertical-align: top;
+	font-size: 10px;
+	color: white;
+}
+
+/* campaign */
+.campaignRow{
+	background: lightblue;
+	padding: 5px;
+}
+
+.campaignImageWrap{
+	background: pink;
+	line-height: 5.0;
+	font-size: 30px;
+}
+
+.campaignImageWrap > div{
+	background: red;
+	max-width: 300px;
+	padding: 5px;
+	line-height: 1.0;
+}
+
+.campaignImageWrap > div > h2{
+	min-height: 50px;
+	background: yellow;
+}
+
+.campaignImageWrap > div > p{
+	min-height: 100px;
+	background: blue;
+}
+
+.campaignImageWrap > div > div{
+	min-height: 50px;
+	background: yellow;
+	padding: 5px;
+}
+
+.campaignImageWrap button{
+	min-height: 50px;
+	background: red;
+	min-width: 40%;
+	margin-right: 5px;
+}
+
+/* primary */
+.primaryRow{
+	background: blue;
+}
+
+.primaryContentWrap ul > li{
+	display: inline-block;
+	background: pink;
+	min-width: calc(33% - 5px);
+}
+
+.primaryContentWrap ul > li:nth-last-child(2){
+	margin: 0 10px;
+}
+
+.primaryContentWrap ol > li{
+	background: lightblue;
+	min-height: 50px;
+	padding: 5px;
+}
+
+.primaryContentWrap ol > li:last-child{
+	margin-top: 10px;
+}
+
+.primaryContentWrap ol > li:first-child > div{
+	background: red;
+	min-height: 50px;
+	min-width: 49%;
+	display: inline-block;
+}
+
+.primaryContentWrap ol > li:first-child > div:last-child{
+	margin-left: 5px;
+}
+
+/* health service */
+.serviceRow{
+	background: gray;
+}
+
+.serviceContentWrap {
+	background: yellow;
+	min-height: 100px;
+	padding: 5px;
+}
+
+.serviceContentWrap > div{
+	background: red;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.serviceContentWrap > div > *{
+	background: pink;
+	min-height: 50px;
+	min-width: calc(50% - 5px);
+	display: inline-block;
+}
+
+.serviceContentWrap > div > p{
+	margin-left: 10px;
+}
+
+.serviceContentWrap ul > li{
+	display: inline-block;
+	background: pink;
+	min-width: calc(33% - 5px);
+	min-height: 100px;
+	padding: 5px;
+}
+
+.serviceContentWrap ul > li:nth-child(2){
+	margin: 0 10px;
+}
+
+.serviceContentWrap ul > li:nth-last-child(2){
+	margin: 0 10px;
+}
+
+.serviceContentWrap ol > li{
+	background: lightblue;
+	min-height: 50px;
+	padding: 5px;
+}
+
+.serviceContentWrap ol > li:not(:first-child){
+	margin-top: 10px;
+}
+
+.serviceContentWrap ol > li:first-child > div{
+	background: red;
+	min-height: 50px;
+	max-width: 50px;
+}
+
+/* service image */
+.serviceImageRow{
+	background: lightblue;
+	padding: 5px;
+}
+
+.serviceImageWrap{
+	background: pink;
+	text-align: right;
+	line-height: 10.0; /* 설정 되어 있는 높이보다 작아서 안먹음 */
+	font-size: 50px;
+	color: black;
+}
+
+.serviceImageWrap > div{
+	background: red;
+	min-width: 300px;
+	padding: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.serviceImageWrap > div > *{
+	background: yellow;
+	min-height: 60px;
+}
+
+.serviceImageWrap > div > *:not(:last-child){
+	margin-bottom: 10px;
+}
+
+/* experience doctor  */
+.doctorRow{
+	background: gray;
+}
+
+.doctorContentWrap {
+	background: yellow;
+	min-height: 100px;
+	padding: 5px;
+}
+
+.doctorContentWrap > div{
+	background: red;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.doctorContentWrap > div > *{
+	background: pink;
+	min-height: 50px;
+	min-width: calc(50% - 5px);
+	display: inline-block;
+}
+
+.doctorContentWrap > div > p{
+	margin-left: 10px;
+}
+
+.doctorContentWrap ul > li{
+	display: inline-block;
+	background: pink;
+	min-width: calc(33% - 5px);
+	min-height: 100px;
+	padding: 5px;
+}
+
+.doctorContentWrap ul > li:nth-child(2){
+	margin: 0 10px;
+}
+
+.doctorContentWrap ul > li:nth-last-child(2){
+	margin: 0 10px;
+}
+
+.doctorContentWrap ol > li{
+	background: green;
+	padding: 5px;
+}
+
+.doctorContentWrap ol > li:nth-child(1){
+	min-height: 150px;
+}
+
+.doctorContentWrap ol > li:nth-child(2){
+	margin: 10px 0;
+}
+
+.doctorContentWrap ol > li:nth-child(2) > *{
+	background: red;
+	min-height: 20px;
+	margin-bottom: 5px;
 	
 }
 
-.watch:hover{
-	animation-play-state: paused;
+.doctorSocialWrap > div{
+	background: yellow;
+	min-width: calc(49% - 2px);
+	display: inline-block;
+	min-height: 30px;
+	padding: 5px;
+	vertical-align:top;
+	margin-left: 5px;
+}
+
+.doctorSocialWrap > div:last-child > ul {
+	display: flex;
+	flex-direct:  row;
+	justify-content: space-between;
+}
+
+.doctorSocialWrap > div:last-child > ul > li{
+	background: red;
+	min-height: 20px;
+	min-width: 20%;
+	vertical-align:top;
+	margin: 0;
+}
+
+/* question */
+.secQandaRow {
+	background: gray;
+}
+
+.qnaWrap ul{
+	display: flex;
+	background: yellow;
+	padding: 5px;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.qnaWrap ul > li{
+	background: pink;
+	min-width: 49%;
+	padding: 5px;
+}
+
+.qnaWrap ul > li:last-child{
+	margin-left: 10px;
+}
+
+/* left */
+.leftQnaInnerWrap{
+	background: red;
+	padding: 5px;
+}
+
+.leftQnaInnerWrap > li:first-child > *{
+	background: pink;
+	min-height: 30px;
 	
 }
 
-@keyframes pic{
-	0% {transform:translate(0);}
-	20% {transform: translate(-2px, 2px);}
-	40% {transform: translate(-2px, -2px);}
-	60% {transform: translate(2px, 2px);}
-	80% {transform: translate(2px, -2px);}
-	100% {transform: translate(0);}
+.leftQnaInnerWrap > li:first-child > p{
+	margin-top: 10px;
+}
+
+.qnaBtnWrap{
+	margin-top:10px;
+}
+
+.qnaBtnWrap > div{
+	display: flex;
+	flex-direction: row;
+}
+
+.qnaBtnWrap > div:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.qnaBtnWrap > div{
+	display: flex;
+	flex-direction: row;
+}
+
+.qnaBtnWrap > div > p{
+	background: green;
+	min-height: 30px;
+	min-width: 80%;
+}
+
+.qnaBtnWrap > div > div{
+	background: blue;
+	min-height: 30px;
+	min-width: 18%;
+	margin-left: 10px;
+}
+
+/* right */
+.rightInnerWrap li{
+	background: green;
+	min-height: 32px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.textInnerWrap > p{
+	background: yellow;
+	max-width: 20%;
+	min-height: 20px;
+}
+
+.textInnerWrap > input[type="text"]{
+	min-height: 20px;
+	min-width: 100%;
+	margin-top: 10px;
+}
+
+.textInnerWrap > textarea{
+	min-height: 50px;
+	min-width: 100%;
+	margin-top: 10px;
+}
+.rightInnerWrap button{
+	min-height: 40px;
+	min-width: 20%;
+	background: blue;
+}
+
+/* doctor word */
+.secDoctorWord {
+	background: lightblue;
+	
+}
+
+.secDoctorWord ul {
+	background: yellow;
+	max-width: 50%;
+	min-height: 20px;
+	transform: translateX(50%);
+	margin: 150px 0;
+	padding: 5px;
+}
+
+.secDoctorWord ul > li{
+	background: red;
+	min-height: 50px;
+	padding: 5px;
+}
+
+.secDoctorWord ul > li:first-child{
+	max-width: 50px;
+	margin: 0 auto;
+}
+
+.secDoctorWord ul > li:last-child{
+	margin-top: 10px;
+}
+
+.secDoctorWord ol > li{
+	background: green;
+	min-height: 40px;
+}
+
+.secDoctorWord ol > li:last-child{
+	margin-top: 10px;
+}
+
+/* information */
+.secInfoRow {
+	background: blue;
+}
+
+.secInfoWrap {
+	max-width: 60%;
+	background: green;
+	transform: translateX(36%);
+	margin: 50px 0;
+	padding: 5px;
+}
+
+.secInfoWrap > p{
+	background: yellow;
+	min-height: 20px;
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+.secInfoWrap > h3{
+	background: yellow;
+	min-height: 50px;
+	margin: 10px 0;
+}
+
+/* notice */
+.secNoticeRow{
+	background: gray;
+}
+
+.noticeContentWrap {
+	background: yellow;
+	min-height: 100px;
+	padding: 5px;
+}
+
+.noticeContentWrap > div{
+	background: red;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.noticeContentWrap > div > *{
+	background: pink;
+	min-height: 50px;
+	min-width: calc(50% - 5px);
+	display: inline-block;
+}
+
+.noticeContentWrap > div > p{
+	margin-left: 10px;
+}
+
+.noticeContentWrap ul > li{
+	display: inline-block;
+	background: pink;
+	min-width: calc(33% - 5px);
+	min-height: 100px;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.noticeContentWrap ul > li:nth-child(2){
+	margin: 0 10px;
+}
+
+.noticeContentWrap ul > li:nth-last-child(2){
+	margin: 0 10px;
+}
+
+.noticeContentWrap ol > li{
+	background: lightblue;
+	min-height: 150px;
+	padding: 5px;
+}
+
+.noticeContentWrap ol > li:first-child > div{
+	background: red;
+	min-height: 50px;
+	max-width: 50px;
+}
+
+.noticeInnerWrap{
+	margin-top: 10px;
+}
+
+.noticeInnerWrap > *{
+	background: green;
+	min-height: 30px;
+	padding: 5px;
+}
+
+.noticeInnerWrap > p:nth-child(2){
+	min-height: 50px;
+	margin: 10px 0;
+}
+
+.noticeInnerWrap > div p {
+	min-height: 20px;
+	min-width: 30%;
+	background: yellow;
+	font-size: 10px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+/* footer */
+.footer{
+	background: gray;
+	padding: 5px;
+}
+
+/* logo */
+.secLogoWrap {
+	max-width: 90%;
+	min-height: 20px;
+	background: pink;
+	transform: translateX(5%);
+	padding: 5px;
+	margin: 50px 0;
+}
+
+.secLogoWrap ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.secLogoWrap ul li{
+	background: red;
+	min-height: 100px;
+	width: 20%;
+	margin-right: 10px;
+}
+
+/* mini menu */
+.secMinimenuwrap{
+	max-width: 100%;
+	background: yellow;
+	padding: 5px;
+	margin: 50px 0;
+}
+
+.secMinimenuwrap ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.secMinimenuwrap ul li{
+	background: red;
+	min-height: 150px;
+	width: 15%;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+.secMinimenuwrap ul li > *{
+	background: blue;
+	min-height: 30px;
+	margin-top: 5px;
+	padding: 5px;
+}
+
+.secMinimenuwrap ul li:last-child{
+	width: 30%;
+}
+
+.btnWrap > div > input[type="text"]{
+	min-height: 20px;
+	min-width: 70%;
+	vertical-align: top;
+}
+
+.btnWrap > div > button{
+	background: yellow;
+	min-height: 20px;
+	min-width: 25%;
+	margin-left: 10px;
+}
+
+/* copy right */
+.secCopyRightWrap{
+	background: gray;
+	padding: 5px;
+}
+
+.secCopyRightWrap ul > li{
+	display: inline-block;
+	background: red;
+	min-width: 78%;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.secCopyRightWrap ul > li:first-child {
+	transform: translateY(50%);
+	
+}
+.secCopyRightWrap ul > li:first-child > p{
+	background: yellow;
+	min-width: 20%;
+	min-height: 20px;
+	padding: 5px;
+}
+
+.secCopyRightWrap ul > li:last-child{
+	min-width: 21%;
+	margin-left: 10px;
+}
+
+.secCopyRightWrap ol{
+	text-align: right;
+
+}
+
+.secCopyRightWrap ol > li{
+	min-width: 23%;
+	display: inline-block;
+	background: yellow;
+	min-height: 50px;
+	margin-left: 1px;
 }

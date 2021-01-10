@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+/* 기본셋팅 */
+*{ 
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 0;
+}
+
+.header {
+	background: gray;
+	padding: 5px
+}
+
+.navWrap{
+	max-width: 1024px;
+	background: yellow;
+	min-height: 50px;
+}
