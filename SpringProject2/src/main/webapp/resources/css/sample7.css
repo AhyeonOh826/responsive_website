@@ -361,9 +361,6 @@ header{
 	
 }
 
-.doctorSocialWrap{
-}
-
 .doctorSocialWrap > div{
 	background: yellow;
 	min-width: calc(49% - 2px);
@@ -388,4 +385,367 @@ header{
 	margin: 0;
 }
 
+/* question */
+.secQandaRow {
+	background: gray;
+}
 
+.qnaWrap ul{
+	display: flex;
+	background: yellow;
+	padding: 5px;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.qnaWrap ul > li{
+	background: pink;
+	min-width: 49%;
+	padding: 5px;
+}
+
+.qnaWrap ul > li:last-child{
+	margin-left: 10px;
+}
+
+/* left */
+.leftQnaInnerWrap{
+	background: red;
+	padding: 5px;
+}
+
+.leftQnaInnerWrap > li:first-child > *{
+	background: pink;
+	min-height: 30px;
+	
+}
+
+.leftQnaInnerWrap > li:first-child > p{
+	margin-top: 10px;
+}
+
+.qnaBtnWrap{
+	margin-top:10px;
+}
+
+.qnaBtnWrap > div{
+	display: flex;
+	flex-direction: row;
+}
+
+.qnaBtnWrap > div:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.qnaBtnWrap > div{
+	display: flex;
+	flex-direction: row;
+}
+
+.qnaBtnWrap > div > p{
+	background: green;
+	min-height: 30px;
+	min-width: 80%;
+}
+
+.qnaBtnWrap > div > div{
+	background: blue;
+	min-height: 30px;
+	min-width: 18%;
+	margin-left: 10px;
+}
+
+/* right */
+.rightInnerWrap li{
+	background: green;
+	min-height: 32px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.textInnerWrap > p{
+	background: yellow;
+	max-width: 20%;
+	min-height: 20px;
+}
+
+.textInnerWrap > input[type="text"]{
+	min-height: 20px;
+	min-width: 100%;
+	margin-top: 10px;
+}
+
+.textInnerWrap > textarea{
+	min-height: 50px;
+	min-width: 100%;
+	margin-top: 10px;
+}
+.rightInnerWrap button{
+	min-height: 40px;
+	min-width: 20%;
+	background: blue;
+}
+
+/* doctor word */
+.secDoctorWord {
+	background: lightblue;
+	
+}
+
+.secDoctorWord ul {
+	background: yellow;
+	max-width: 50%;
+	min-height: 20px;
+	transform: translateX(50%);
+	margin: 150px 0;
+	padding: 5px;
+}
+
+.secDoctorWord ul > li{
+	background: red;
+	min-height: 50px;
+	padding: 5px;
+}
+
+.secDoctorWord ul > li:first-child{
+	max-width: 50px;
+	margin: 0 auto;
+}
+
+.secDoctorWord ul > li:last-child{
+	margin-top: 10px;
+}
+
+.secDoctorWord ol > li{
+	background: green;
+	min-height: 40px;
+}
+
+.secDoctorWord ol > li:last-child{
+	margin-top: 10px;
+}
+
+/* information */
+.secInfoRow {
+	background: blue;
+}
+
+.secInfoWrap {
+	max-width: 60%;
+	background: green;
+	transform: translateX(36%);
+	margin: 50px 0;
+	padding: 5px;
+}
+
+.secInfoWrap > p{
+	background: yellow;
+	min-height: 20px;
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+.secInfoWrap > h3{
+	background: yellow;
+	min-height: 50px;
+	margin: 10px 0;
+}
+
+/* notice */
+.secNoticeRow{
+	background: gray;
+}
+
+.noticeContentWrap {
+	background: yellow;
+	min-height: 100px;
+	padding: 5px;
+}
+
+.noticeContentWrap > div{
+	background: red;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.noticeContentWrap > div > *{
+	background: pink;
+	min-height: 50px;
+	min-width: calc(50% - 5px);
+	display: inline-block;
+}
+
+.noticeContentWrap > div > p{
+	margin-left: 10px;
+}
+
+.noticeContentWrap ul > li{
+	display: inline-block;
+	background: pink;
+	min-width: calc(33% - 5px);
+	min-height: 100px;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.noticeContentWrap ul > li:nth-child(2){
+	margin: 0 10px;
+}
+
+.noticeContentWrap ul > li:nth-last-child(2){
+	margin: 0 10px;
+}
+
+.noticeContentWrap ol > li{
+	background: lightblue;
+	min-height: 150px;
+	padding: 5px;
+}
+
+.noticeContentWrap ol > li:first-child > div{
+	background: red;
+	min-height: 50px;
+	max-width: 50px;
+}
+
+.noticeInnerWrap{
+	margin-top: 10px;
+}
+
+.noticeInnerWrap > *{
+	background: green;
+	min-height: 30px;
+	padding: 5px;
+}
+
+.noticeInnerWrap > p:nth-child(2){
+	min-height: 50px;
+	margin: 10px 0;
+}
+
+.noticeInnerWrap > div p {
+	min-height: 20px;
+	min-width: 30%;
+	background: yellow;
+	font-size: 10px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+/* footer */
+.footer{
+	background: gray;
+	padding: 5px;
+}
+
+/* logo */
+.secLogoWrap {
+	max-width: 90%;
+	min-height: 20px;
+	background: pink;
+	transform: translateX(5%);
+	padding: 5px;
+	margin: 50px 0;
+}
+
+.secLogoWrap ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.secLogoWrap ul li{
+	background: red;
+	min-height: 100px;
+	width: 20%;
+	margin-right: 10px;
+}
+
+/* mini menu */
+.secMinimenuwrap{
+	max-width: 100%;
+	background: yellow;
+	padding: 5px;
+	margin: 50px 0;
+}
+
+.secMinimenuwrap ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.secMinimenuwrap ul li{
+	background: red;
+	min-height: 150px;
+	width: 15%;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+.secMinimenuwrap ul li > *{
+	background: blue;
+	min-height: 30px;
+	margin-top: 5px;
+	padding: 5px;
+}
+
+.secMinimenuwrap ul li:last-child{
+	width: 30%;
+}
+
+.btnWrap > div > input[type="text"]{
+	min-height: 20px;
+	min-width: 70%;
+	vertical-align: top;
+}
+
+.btnWrap > div > button{
+	background: yellow;
+	min-height: 20px;
+	min-width: 25%;
+	margin-left: 10px;
+}
+
+/* copy right */
+.secCopyRightWrap{
+	background: gray;
+	padding: 5px;
+}
+
+.secCopyRightWrap ul > li{
+	display: inline-block;
+	background: red;
+	min-width: 78%;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.secCopyRightWrap ul > li:first-child {
+	transform: translateY(50%);
+	
+}
+.secCopyRightWrap ul > li:first-child > p{
+	background: yellow;
+	min-width: 20%;
+	min-height: 20px;
+	padding: 5px;
+}
+
+.secCopyRightWrap ul > li:last-child{
+	min-width: 21%;
+	margin-left: 10px;
+}
+
+.secCopyRightWrap ol{
+	text-align: right;
+
+}
+
+.secCopyRightWrap ol > li{
+	min-width: 23%;
+	display: inline-block;
+	background: yellow;
+	min-height: 50px;
+	margin-left: 1px;
+}
