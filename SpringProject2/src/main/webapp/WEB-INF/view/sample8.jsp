@@ -70,7 +70,7 @@
 			</section>
 			<!-- // Image  -->
 		</header>
-		<!--  header -->
+		<!--  headder -->
 		<!-- content by container -->
 		<div class="content">
 			<!-- Latest -->
