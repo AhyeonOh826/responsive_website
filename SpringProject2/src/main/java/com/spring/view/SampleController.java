@@ -45,7 +45,7 @@ public class SampleController {
 	
 	@RequestMapping(value = "/sample8.do")
 	public String sample8() {
-		return "sample8";
+		return "sample7";
 	}
 }
 
