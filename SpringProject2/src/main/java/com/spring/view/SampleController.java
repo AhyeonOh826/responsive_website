@@ -47,6 +47,13 @@ public class SampleController {
 	public String sample8() {
 		return "sample7";
 	}
+	
+	@RequestMapping(value = "/mainBoard.do")
+	public String mainBoard() {
+		
+		
+		return "mainBoard";
+	}
 }
 
 

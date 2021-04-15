@@ -24,6 +24,7 @@
 			<li><a href="sample4.do">sample4</a></li>		
 			<li><a href="sample6.do">sample6</a></li>		
 			<li><a href="sample7.do">sample7</a></li>		
+			<li><a href="mainBoard.do">Making board with Spring</a></li>		
 		</ul>
 	</div>
 	<div class="container_right">
