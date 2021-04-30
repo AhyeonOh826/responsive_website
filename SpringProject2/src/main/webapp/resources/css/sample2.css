@@ -13,7 +13,153 @@
     box-sizing: border-box;
     font-family: 'HeirofLightBold';
 }
- 
+
+/* just some  styling*/
+body { 
+  text-align: center; 
+
+}
+
+/* heart div class - in html i used just a simple html simbol entity for heart sign, you can use text or whatever u want*/
+
+.heart {
+	font-size: 10px;
+	top: 12px;
+	color: #e00;
+	animation: beat .25s infinite alternate;
+	transform-origin: center;
+	position: absolute
+}
+
+/* Heart beat animation */
+@keyframes beat{
+	to { transform: scale(1.4); }
+}
+
+/* we are using prefix free for this example
+
+for prefixed code it would look like this
+
+
+body {
+	text-align: center;
+}
+
+
+.heart {
+	font-size: 150px;
+	color: #e00;
+
+	-webkit-animation: beat .25s infinite alternate;
+	-moz-animation: beat .25s infinite alternate;
+	-ms-animation: beat .25s infinite alternate;
+	-o-animation: beat .25s infinite alternate;
+	animation: beat .25s infinite alternate;
+
+	-webkit-transform-origin: center;
+	-moz-transform-origin: center;
+	-o-transform-origin: center;
+	-ms-transform-origin: center;
+	transform-origin: center;
+}
+
+
+@keyframes "beat" {
+ to {
+    -webkit-transform: scale(1.4);
+   	-moz-transform: scale(1.4);
+   	-o-transform: scale(1.4);
+   	-ms-transform: scale(1.4);
+   	transform: scale(1.4);
+ }
+
+}
+
+@-moz-keyframes beat {
+ to {
+   -moz-transform: scale(1.4);
+   transform: scale(1.4);
+ }
+
+}
+
+@-webkit-keyframes "beat" {
+ to {
+   -webkit-transform: scale(1.4);
+   transform: scale(1.4);
+ }
+
+}
+
+@-ms-keyframes "beat" {
+ to {
+   -ms-transform: scale(1.4);
+   transform: scale(1.4);
+ }
+
+}
+
+@-o-keyframes "beat" {
+ to {
+   -o-transform: scale(1.4);
+   transform: scale(1.4);
+ }
+
+} */
+
+
+
+
+
+
+
+
+
+
+/* header  */
+.header{
+	position: fixed;
+	width: 100%;
+    padding: 10px 30px;
+    border-bottom: 1px solid black;
+    background: white;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header a {
+    border: 1px solid black;
+    font-size: 12px;
+    color: black;
+    padding: 3px 10px;
+    line-height: 2.1;
+}
+
+.header > ul {
+	line-height: 2.1;
+}
+
+.header > i{
+	line-height: 2.1;
+	color: white;
+}
+
+/* 이모티콘 */
+div.displayNone{
+	display: none;
+}
+
+#openEyes{
+	position: absolute;
+	top: 5px;
+	width:359.6px;
+	height:360.6px;
+	left: 121px;
+}
+#closeEyes{
+}
 /* 컨테이너  */
 .container{
     width: 80%;
@@ -41,43 +187,6 @@
 .time{
     float: right;
 } 
-
-/* nav fixed  */
-.header{
-	position:fixed;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* container 속성 */
-    align-items: center; /* container 속성 */
-    padding: 10px 30px;
-    border-bottom: 1px solid black;
-    background: white;
-    z-index: 999;
-}
-
-i{
-    font-size: 24px;
-}
-
-.header > .what{
-    display: none;
-}
-
-.header li {
-    display: inline-block;
-}
-
-.header a {
-    border: 1px solid black;
-    font-size: 12px;
-    display: block;
-    color: black;
-    padding: 3px 10px;
-    color: black;
-    position: relative;
-    top:-4px;
-}
 
 div.event {
     padding:20px 0;
