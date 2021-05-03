@@ -27,7 +27,6 @@
 	}); 
 
 	function openMyEyes(){
-		console.log("눈떠");
 		var openEyes = document.getElementById("openEyes");
 		openEyes.classList.toggle("displayNone");
 	}
@@ -53,7 +52,7 @@
 	  	 back[j].style.background = color[num];
 		}
 	   // 1초마다 changeColor 함수 호출하는 함수 
-	   setInterval(changeColor, 1000);
+	  // setInterval(changeColor, 1000);
 	}
 	
 	// 2번 증감 연산자 사용 (함수 밖에 선언)
@@ -84,7 +83,7 @@
     <header class="header">
         <i class="fas fa-bars"></i>
         <div class="heart">&#x2665;</div>
-        <h2 class="title">어서오세요, 포트폴리오 입니다.</h2>
+        <h2 class="title">Yoni's Portfolio</h2>
         <ul>
             <!-- <li><i class="fas fa-bars"></i></li> -->
             <li><a href="#">프로필</a></li>
@@ -96,23 +95,23 @@
     <!-- //header -->
     <div class="container"><!-- 컨테이너 -->
         <div class="event"> <!-- 이벤트 -->
-            <span>문구 들어가기</span>
+            <span>아무렇게나 하면 아무렇게나 되어 버리고, 결국엔 더 힘만 들게 된다.</span>
             <!-- <a href="#"><i class="fas fa-arrow-right"></i></a> -->
         </div> <!-- 이벤트 끝 -->
         <section class="content1"> <!-- content1 -->
             <div class="left">
             	<div id="closeEyes">
-	                <img alt="사진" src="resources/images/myFace1.jpg" width="60%" height="70%">
+	                <img alt="사진" src="resources/images/myFace2.jpg" width="" height="">
             	</div>
             	<div id="openEyes" class="">
-	                <img alt="사진" src="resources/images/myFace1.jpg" width="100%" height="100%">
+	                <img alt="사진" src="resources/images/myFace.jpg" width="" height="">
             	</div>
             </div>
             <div class="right">
                 <a href="#">나</a>
                 <div>
                     <h2>'나'에 투자합니다.</h2>
-                    <h3>자본이 몰리는 우주 산업의 최전선</h3>
+                    <h3>상상이 몰리는 IT 산업의 최전선</h3>
                     <p>세계는 왜 지금 우주 개발 경쟁에 뛰어들까. 우주 비즈니스는 어디까지 확장될 수 있을까. 인류의 마지막 투자처로 불리는 우주의 가능성을 살펴본다.</p>
                 </div>
             </div>
@@ -156,7 +155,8 @@
               </div>
               <div class="switer_button_next"><i class="fas fa-arrow-circle-right"></i></div>
           </div>
-        </section><!-- content2 끝-->
+        </section>
+        <!-- content2 끝-->
 <!--         <section class="content2">content2
           <h2>스타트업 101</h2>
            <div class="books">
@@ -235,8 +235,10 @@
         <div class="news_letters_card_1">
             <div class="color_1"></div>  
         </div>
-    </section><!--news letters 끝 -->
-    <footer class="footer"><!-- footer -->
+    </section>
+    <!--news letters 끝 -->
+    <!-- footer -->
+    <footer class="footer">
         <div>
             <h2>THREECHAIRS</h2>
             <h2>PUBLISHING COMPANY</h2>
@@ -255,6 +257,7 @@
             <p>(주)스리체어스 서울시 중구 3층</p>
             <p>(주)스리체어스 서울시 중구 3층스리체어스 서울시 중구 3층스리체어스 서울시 중구 3층</p>
         </div>
-    </footer><!-- footer 끝 -->
+    </footer>
+    <!-- footer 끝 -->
 </body>
 </html>
