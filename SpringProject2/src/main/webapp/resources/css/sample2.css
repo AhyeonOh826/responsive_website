@@ -13,14 +13,7 @@
     box-sizing: border-box;
     font-family: 'HeirofLightBold';
 }
-
-/* just some  styling*/
-body { 
-
-}
-
 /* heart div class - in html i used just a simple html simbol entity for heart sign, you can use text or whatever u want*/
-
 .heart {
 	font-size: 10px;
 	top: 12px;
@@ -35,7 +28,7 @@ body {
 	to { transform: scale(1.4); }
 }
 
-/* header  */
+/* 헤더  */
 .header{
 	position: fixed;
 	width: 100%;
@@ -78,9 +71,6 @@ div.displayNone{
 	left: 7px;
 }
 
-#closeEyes{
-}
-
 /* 컨테이너  */
 .container{
     width: 80%;
@@ -91,23 +81,6 @@ div.displayNone{
     width: 100%;
     padding: 10px 0;
 }
-
-.top > ul,li{
-    display: inline-block;
-    margin-left: 10px;
-}
- 
-.login{
-    float: right;
-}
- 
-.bottom > img{
-    float: left;
-}
- 
-.time{
-    float: right;
-} 
 
 div.event {
     padding:20px 0;
@@ -123,7 +96,6 @@ section.content1{
     flex-direction: row;
     position: relative;
     margin-top:50px;
-    
 }
 
 section.content1 > div {
@@ -164,25 +136,11 @@ section.content2 {
 
 section.content2 > div.books > div {
 	display: inline-block;
-	padding: 50px;
-}
-
-section.content2 > div.books > div:first-child {
-	position: absolute;
-	top:50%;
-	left: 30px;
-}
-
-section.content2 > div.books > div:last-child {
-    position: absolute;
-    top:50%;
-    right: 30px;
 }
 
 div.books_card {
-	width: 25%;
-	padding: 20px;
-	text-align: left;
+	width: 24%;
+	cursor: pointer;
 }
 
 div.books_card > img,div,h4,h6,p {
@@ -194,93 +152,60 @@ div.books_card  a {
     text-decoration: underline;
 }
 
-section.content3  {
-	width: 100%;
-	text-align: center;
-	padding: 30px;
+.modal-body{
+	width:100%;
+	height: 900px;
+	overflow: hidden;
 }
 
-section.content3 > p  {
-    padding: 40px;
-    font-size: 30px;
-}
-
-section.content3 > ul > li  {
-	font-size: 15px;
-	padding: 30px 60px;
-}
-
-section.news{
-	width: 100%;
-	text-align: top; /* top으로 올려서 */
-	display: flex;
-	flex-direction : row;
-	justify-content : center;
-	border-top : 1px solid black;
-	padding: 50px 0;
-}
-
-section.news > p{
-    font-size:3rem;
-    float: left; /* 글자를 왼쪽에 배치한다 */
-    padding-right: 20px;
-}
-/*  뉴스 레터 */
-section.news_letters {
-    width: 100%;
-    margin-top: 100px;
-}
-
-section.news_letters > div {
-    display: inline-block;
-    height:500px;
-    position: relative; /* class color_1의 부모  */
-}
-
-section.news_letters > div.news_letters_card_1 {
-	width: 23%;
-}
-
-section.news_letters > div.news_letters_card_2 {
-    width: 48%;
-    margin: 0 10px;
-}
-
-.color_1 {
-	background: var(--color_1);
-	position: absolute; /* class news_letters_card_1(section.news_letters > div) 의 자식  */
+.modal-slider1{
+	width:100%;
 	height: 100%;
-	width: 100%;
-	padding: 20px;
-	text-align: right;
+	transition: transform 0.5s;
 }
 
-.color_1 > div:not(img) {
-	 position:relative;
-	 text-align:left;
-	 margin-top :40px;
-     top:-20px;
+.modal-slider1 li{
+	width:100%;
+	height: 100%;
+	margin-top: 20px;
 }
 
-.footer {
-	width: 80%;
-	margin: 0 auto;
-	padding: 20px;
-	margin-top: 50px;
-	text-align: left;
+.modal-body2{
+	width:100%;
+	height: 600px;
+	overflow: auto;
 }
 
-.footer > div {
-	display: inline-block;
-	width: 33%;
-	margin: 0 auto;
-	border-right: 1px solid black;
-	padding: 20px 20px;
+.modal-slider2 li{
+	margin-top: 20px; 
+}
+.barWrap{
+	width: 5px;
+	position: fixed;
+	top: calc( 50% - 75px );
+	left: 10px;
+	height: 150px;
+	background: gray;
+	border-radius: 5px;
+	z-index: 10;
+	opacity: 0.5;
+}
+.modal-body2::-webkit-scrollbar {
+    display: none;
+}
+.bar{
+	position: absolute;
+	width: 9px;
+	height: 10px;
+	top: calc( 50% - 75px );
+	left: 0;
+	background: black;
+	z-index: 11;
+	border-radius: 50%;
 }
 
-.footer > div  > *{
-	line-height: 30px;
-}
+
+
 
 
 @media screen and (max-width:1000px){
@@ -344,3 +269,6 @@ section.news_letters > div.news_letters_card_2 {
         border: none;
     }
 } 
+
+
+
