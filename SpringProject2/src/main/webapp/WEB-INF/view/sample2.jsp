@@ -122,7 +122,7 @@
             </div>
         </section>
         <!-- //content1-->
-        <!-- content2 -->	------------------------------------------------------
+        <!-- content2 -->	
         <section class="content2">
           <div class="books">
               <div class="books_card openModal" data-toggle="modal" data-target="#layout">

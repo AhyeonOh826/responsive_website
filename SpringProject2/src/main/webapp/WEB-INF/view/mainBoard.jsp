@@ -24,8 +24,9 @@
 
 body{
 	height: 100%;
+	background: #eceff1;
+	
 }
-
 .main{
 	margin: auto;
 	width: 50%;
@@ -66,6 +67,7 @@ body{
 	background: white;
 	font-weight: bold;
 	float: right;
+	background: #eceff1;
 }
 
 .editButton{
@@ -82,9 +84,9 @@ body{
 .container input{
 	outline: none;
 	border-style: none;
-	background: white;
 	margin: 10px 0;
 	font-size: 40px;
+	background: #eceff1;
 }
 </style>
 <script type="text/javascript">
@@ -137,6 +139,8 @@ document.addEventListener("DOMContentLoaded", function() {/* DOM(document(HTML) 
 
 		edit(input){
 			input.disabled = !input.disabled;
+			// 쿠키값 가져오기
+			alert(document.cookie);
 		}
 
 		remove(item){
@@ -145,11 +149,20 @@ document.addEventListener("DOMContentLoaded", function() {/* DOM(document(HTML) 
  	}
 	// 등록하는 버튼
 	function check(){
+		// 넣은 값 쿠키값에 넣기 
+		document.cookie = 'id=' + input.value;
+		document.cookie = 'age=50';
+		document.cookie = 'name= ' + encodeURIComponent('투');
+
+
+		
 		// 입력창에 글이 들어오면 입력 되고 입력창에서 입력값은 사라지게 해라
 		if(input.value != ""){
 			new item(input.value);
 			input.value="";
 		}
+
+	
 	}
 	
  	// 버튼 클릭하면 check(등록함수)를 호출해라
@@ -161,6 +174,44 @@ document.addEventListener("DOMContentLoaded", function() {/* DOM(document(HTML) 
 			check();
 		}
  	 })
+
+	/* // 현재 위치 경도,위도 가져오기(왜 무주 나오지?ㅎㅎ)
+ 	 navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
+
+	 function geoSuccess(position){
+		// 위도
+		const lat = position.coords.latitude;
+		// 경도
+		const lng = position.coords.longitude;
+		// 위도 경도 오차
+		const accuracy = Math.floor(position.coords.accuracy);
+		
+		alert(lng);
+		alert(lat);
+		alert(accuracy);
+
+		 setMap(lat, lng);
+	}
+
+	 function setMap(lat, lng){
+		// 위도, 경도 설정
+		const latlng = new google.maps.LatLng(lat, lng);s
+
+		// 표시 추가
+		const marker = new google.maps.Marker({
+			map: map,
+			draggable: true,
+			animation: google.maps.Animation.DROP,
+			position :latlng
+		});
+	 }
+	 function geoError(){
+		alert('지도 실패');
+	 }
+ */
+	
+	
+	 
 }); 
 </script>
 </head>
